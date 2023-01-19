@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+
+<script>
+  document.getElementById("demo").onclick = function() {myFunction()};
+  
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "A software developer for managing university projects is responsible for designing, developing, and maintaining software systems that support the operations and administration of a university. This may include systems for student management, course scheduling, financial aid, and other functions. The developer works closely with stakeholders such as university administrators, faculty, and staff to gather requirements, design solutions, and test and deploy the software. They may also be responsible for troubleshooting and resolving any issues that arise with the software. Strong skills in programming, project management, and communication are essential for this role.";
+    document.getElementById("about").innerHTML = "ABOUT ME";
+  }
+  </script>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1  style="font: size 50;">I am Priyanka</h1>
+    <p id="demo" style="font: size 25px;"> And I'm a Software Developer</p>
+    <button class="button" onclick="myFunction()" id="about">About</button>
+  </div>
+</div>
+
+</body>
+</html>
